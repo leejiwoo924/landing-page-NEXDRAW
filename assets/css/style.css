@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #0B1020;
+    --white-color: #ffffff;
+    --black-color: #303030;
+    --point-color: #00F0FF;
+    --gray-color: #707070;
+}
+
+body{
+    color: var(--black-color);
+    font-family: 'Pretendard';
+}
+
+/* common css */
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+/* header */
+.header{
+    position:absolute;
+    top:18px;
+    left:18px;
+    width:100%;
+    z-index:100;
+}
+
+.header-container {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:18px;
+}
+
+.menu{
+    display:flex;
+    gap:160px;
+}
+
+.menu a {
+    display: block;
+    padding: 8px 10px;
+    color: var(--white-color);
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+.buy-btn {
+    display:flex;
+    background-color: #00F0FF;
+    padding: 20px 12px;
+}

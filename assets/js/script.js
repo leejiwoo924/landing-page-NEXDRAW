@@ -1,11 +1,15 @@
-const slides = document.querySelectorAll(".protect_text");
-let current = 0;
 
-setInterval(() => {
-    slides[current].classList.remove("active");
-    current++;
-    if(current >= slides.length){
-        current = 0;
-    }
-    slides[current].classList.add("active");
-},3000);
+// faq
+const faqItems = document.querySelectorAll(".faq_item");
+
+faqItems.forEach((item) => {
+    const question = item.querySelector(".faq_question");
+    question.addEventListener("click", () => {
+        faqItems.forEach((otherItem) => {
+            if (otherItem !== item) {
+                otherItem.classList.remove("active");
+            }
+        });
+        item.classList.toggle("active");
+    });
+});

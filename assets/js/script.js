@@ -1,3 +1,8 @@
+//protect
+// 슬라이드
+
+//ai_description
+//카드 슬라이드
 
 // faq
 const faqItems = document.querySelectorAll(".faq_item");

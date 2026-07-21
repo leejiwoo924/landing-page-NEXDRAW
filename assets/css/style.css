@@ -27,22 +27,22 @@ body{
 /* ================================================== */
 
 /* header */
-.header{
+.header {
     position:absolute;
-    top:18px;
+    top:1.125rem;
     left:0;
     width:100%;
     z-index:100;
 }
 
 .header-container {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    height:1.125rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 2.5rem;
 }
 
-.menu{
+.menu {
     display:flex;
     gap:10rem;
 }
@@ -53,6 +53,21 @@ body{
     color: var(--white-color);
     font-size: 1.25rem;
     text-decoration: none;
+}
+
+.mo-menu {
+    display: none;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.mo-menu img {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    object-fit: contain;
 }
 
 .buy-btn {
@@ -86,7 +101,6 @@ body{
 .hero-text {
     position: absolute;
     top: 50%;
-    left: 8%;
     transform: translateY(-50%);
     color: var(--white-color);
 }
@@ -157,9 +171,9 @@ body{
 }
 
 .Pen-function_list{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:1.5rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.5rem;
 }
 
 .Pen-function_card{
@@ -198,7 +212,7 @@ body{
 }
 
 .Pen-function_overlay p{
-    font-size: 0.9375rem;
+    font-size: 1rem;
     margin-top:0.875rem;
     line-height:1.6;
     transform:translateY(1.25rem);
@@ -395,7 +409,7 @@ body{
 .color_wrap{
     display:flex;
     align-items:center;
-    justify-content:space-between;
+    justify-content: space-between;
     gap:6.25rem;
 }
 
@@ -619,14 +633,15 @@ body{
 }
 
 .usage_card span{
-    font-size:1rem;
-    font-weight:bold;
+    font-size: 1rem;
+    font-weight: 700;
     color:var(--white-color);
     margin-bottom:1.125rem;
 }
 
 .usage_card p{
     font-size: 1rem;
+    font-weight: 400;
     line-height: 1.8;
     color: var(--white-color)
 }
@@ -691,7 +706,6 @@ body{
 
 .support_box2 h2{
     font-size: 2.5rem;
-    margin-top: 3.75rem;
     font-weight: bold;
     margin-bottom: 3.75rem;
 }
@@ -865,7 +879,7 @@ body{
 .cta_content h2{
     color: var(--white-color);
     font-size: 3rem;
-    font-weight: bold;
+    font-weight: 500;
     line-height: 1.25;
     margin-bottom: 1.25rem;
 }
@@ -912,56 +926,494 @@ body{
 /* footer */
 
 .footer{
-    background: #080b16;
-    padding: 35px 0;
+    background: #090B10;
+    padding: 1.25rem 0;
 }
 
 .footer_wrap{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 50px;
+    gap: 3.125rem;
 }
 
 .footer_logo img{
-    width: 180px;
+    width: 11.25rem;
 }
 
 .footer_info{
     flex: 1;
+    font-size: 0.875rem;
 }
 
 .address {
     color: var(--white-color);
+    line-height: 1.8;
 }
 
 .footer_info p{
     color: var(--white-color);
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 1.8;
 }
 
 .copyright{
-    margin-top: 12px;
+    margin-top: 2.5rem
 }
 
 .footer_menu{
     display: flex;
-    gap: 40px;
+    font-size: 0.875rem;
+    gap: 2.5rem;
 }
 
 .footer_menu a{
     color: var(--white-color);
     text-decoration: none;
-    font-size: 14px;
-    transition: .3s;
-}
-
-.footer_menu a:hover{
-    color: #fff;
+    font-size: 0.875rem;
 }
 
 
 
+@media (max-width: 1024px) {
+
+ /* Common */
+
+    .container {
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 1.25rem;
+    }
 
 
+/* Header */
+
+   .header-container {
+        min-height: 2.5rem;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .buy-btn {
+        display: none;
+    }
+
+    .mo-menu {
+        display: block;
+    }
+
+    .mo-menu img {
+        display: block;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+
+    /* Hero */
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-text p {
+        font-size: 1.25rem;
+    }
+
+
+    /* Intro */
+
+    .intro_text h2 {
+        font-size: 2.5rem;
+    }
+
+    .intro_text p {
+        font-size: 1.25rem;
+    }
+
+
+    /* Pen Function */
+
+    .Pen-function_list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+
+    .Pen-function_overlay h3{
+    font-weight: 600;
+    }
+
+    /* Protect */
+
+    .protect_title {
+        font-size: 2.5rem;
+    }
+
+    .protect_card img {
+        height: 32rem;
+    }
+
+
+    /* Connect */
+
+    .connect_header h2 {
+        font-size: 2rem;
+    }
+
+    .connect_header p {
+        font-size: 1.25rem;
+    }
+
+
+    /* Color */
+
+    .color_content h2 {
+        font-size: 2rem;
+    }
+
+    .color_wrap {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .color_image,
+    .color_content {
+        width: 100%;
+        max-width: 45rem;
+        margin: 0 auto;
+    }
+
+
+    /* AI */
+
+    .ai_wrap {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .ai_content h2 {
+        font-size: 2.5rem;
+    }
+
+    .ai_image {
+        display: none;
+    }
+
+
+    /* AI Description */
+
+    .ai_description_list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ai_description_title h2 {
+        font-size: 2rem;
+    }
+
+
+    /* Usage */
+
+    .usage {
+        padding: 10rem 0;
+    }
+
+    .usage_list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+
+
+    /* Support */
+
+    .support_icons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem 1rem;
+        justify-items: center;
+    }
+
+    .support_icons img {
+        width: 3.75rem;
+        height: 3.75rem;
+        object-fit: contain;
+    }
+
+
+    /* Specification */
+
+    .package_grid {
+        grid-template-columns: 20% 30% 20% 30%;
+        row-gap: 3rem;
+    }
+
+
+    /* CTA */
+
+    .cta_content h2 {
+        font-size: 3rem;
+    }
+
+    .cta_content p {
+        font-size: 1.125rem;
+    }
+
+
+    /* Footer */
+
+    .footer_wrap {
+        gap: 2rem;
+    }
+
+    .footer_menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1rem;
+        text-align: right;
+    }
+
+    .footer_logo img {
+        width: 9rem;
+    }
+
+}
+
+
+@media (max-width: 390px) {
+
+ /* Common */
+
+    .container {
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 1.25rem;
+    }
+
+
+/* Header */
+
+   .header-container {
+        min-height: 2.5rem;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .buy-btn {
+        display: none;
+    }
+
+    .mo-menu {
+        display: block;
+    }
+
+    .mo-menu img {
+        display: block;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+
+    /* Hero */
+
+.hero{
+    min-height:auto;
+}
+
+.bg-img{
+    height:auto;
+    width:100%;
+}
+
+.hero-text{
+    top:80px;
+    left:20px;
+    right:20px;
+    transform:none;
+}
+
+.hero-title{
+    font-size:2rem;
+    line-height:1.2;
+    margin-bottom:1rem;
+}
+
+.hero-text p{
+    font-size:.875rem;
+    line-height:1.6;
+}
+
+
+    /* Intro */
+
+.intro .container{
+    bottom:24px;
+}
+
+.intro_text h2{
+    font-size:1.5rem;
+    line-height:1.3;
+}
+
+.intro_text p{
+    font-size:.875rem;
+    line-height:1.6;
+}
+
+
+    /* Pen Function */
+
+    .Pen-function_list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+
+    .Pen-function_overlay h3{
+    font-weight: 600;
+    }
+
+    /* Protect */
+
+    .protect_title {
+        font-size: 2.5rem;
+    }
+
+    .protect_card img {
+        height: 32rem;
+    }
+
+
+    /* Connect */
+
+    .connect_header h2 {
+        font-size: 2rem;
+    }
+
+    .connect_header p {
+        font-size: 1.25rem;
+    }
+
+
+    /* Color */
+
+    .color_content h2 {
+        font-size: 2rem;
+    }
+
+    .color_wrap {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .color_image,
+    .color_content {
+        width: 100%;
+        max-width: 45rem;
+        margin: 0 auto;
+    }
+
+
+    /* AI */
+
+    .ai_wrap {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .ai_content h2 {
+        font-size: 2.5rem;
+    }
+
+    .ai_image {
+        display: none;
+    }
+
+
+    /* AI Description */
+
+    .ai_description_list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ai_description_title h2 {
+        font-size: 2rem;
+    }
+
+
+    /* Usage */
+
+    .usage {
+        padding: 10rem 0;
+    }
+
+    .usage_list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+
+
+    /* Support */
+
+    .support_icons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem 1rem;
+        justify-items: center;
+    }
+
+    .support_icons img {
+        width: 3.75rem;
+        height: 3.75rem;
+        object-fit: contain;
+    }
+
+
+    /* Specification */
+
+    .package_grid {
+        grid-template-columns: 20% 30% 20% 30%;
+        row-gap: 3rem;
+    }
+
+
+    /* CTA */
+
+    .cta_content h2 {
+        font-size: 3rem;
+    }
+
+    .cta_content p {
+        font-size: 1.125rem;
+    }
+
+
+    /* Footer */
+
+    .footer_wrap {
+        gap: 2rem;
+    }
+
+    .footer_menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1rem;
+        text-align: right;
+    }
+
+    .footer_logo img {
+        width: 9rem;
+    }
+
+}

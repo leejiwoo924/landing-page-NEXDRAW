@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEXDRAW</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/font.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css"
+/>
 </head>
 <body>
 
@@ -143,41 +147,48 @@
 </section>
 
 <!-- protect -->
+ <!-- swiper -->
 <section class="protect">
     <div class="container">
         <h2 class="protect_title">
             항상 사용자의 눈을 보호합니다.
         </h2>
         <div class="protect_card">
-            <img src="./assets/images/protect_card01.png" alt="눈부심 방지">
-            <div class="protect_overlay">
-                <div class="protect_text active">
-                    <h3>DC 디밍 기능</h3>
-                    <p>
-                        이 디스플레이는 햇빛이 비치는 야외에서 어두운 실내로 부드러운 밝기 전환을 위해<br>
-                        DC 디밍 기능을 갖추고 있어 사용 후에도 지속적인 편안함을 보장합니다.
-                    </p>
+            <!-- 배경 이미지 -->
+             <img src="./assets/images/protect_card01.png" alt="눈부심 방지">
+             <!-- 글자 슬라이드 -->
+              <div class="protect_overlay">
+                <div class="swiper protectSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="protect_text"> <h3>DC 디밍 기능</h3>
+                                <p>
+                                    이 디스플레이는 햇빛이 비치는 야외에서 어두운 실내로 부드러운 밝기 전환을 위해<br> 
+                                    DC 디밍 기능을 갖추고 있어 사용 후에도 지속적인 편안함을 보장합니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="protect_text"> <h3>눈부심 방지</h3>
+                                <p>
+                                    AG 나노 에칭 유리와 AF 코팅으로 제작된 이 디스플레이는 눈부심과 지문에<br> 저항하여 눈의 피로를 줄여줍니다.
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="protect_text">
-                    <h3>눈부심 방지</h3>
-                    <p>
-                        AG 나노 에칭 유리와 AF 코팅으로 제작된 이 디스플레이는
-                        눈부심과 지문에 저항하여<br>
-                        눈의 피로를 줄여줍니다.
-                    </p>
-                </div>
-
                 <div class="protect_page">
-                    [<span class="current">1</span>
-                    /
-                    <span class="total">2</span>]
+                    [ <span class="current">
+                        1</span> /
+                        <span class="total">
+                            2
+                        </span>
+                        ]
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-</section>
+    </section>
 
 <!-- connect -->
 <section class="connect">
@@ -193,7 +204,7 @@
             </p>
         </div>
         <div class="connect_image">
-            <img src="./assets/images/간편한 연결.png" alt="USB-C 연결">
+            <img src="./assets/images/conect.png" alt="USB-C 연결">
         </div>
         <p class="connect_notice">
             *USB-C 케이블을 통해 충전과 데이터 전송을 동시에 지원합니다.<br>
@@ -207,7 +218,7 @@
     <div class="container">
         <div class="color_wrap">
             <div class="color_image">
-                <img src="./assets/images/풍부한 색채.png" alt="색역 그래프">
+                <img src="./assets/images/color.png" alt="색역 그래프">
             </div>
             <div class="color_content">
                 <h2>
@@ -238,7 +249,7 @@
 
 <!-- ai -->
 <section class="ai">
-    <div class="container">
+    <div class="ai_container">
 
         <div class="ai_wrap">
             <div class="ai_content">
@@ -251,7 +262,7 @@
                 <ul class="ai_list">
 
                     <li>
-                        <img src="./assets/images/필압패턴 아이콘.png" alt="필압">
+                        <img src="./assets/images/ai_content01.png" alt="필압">
                         <div>
                             <h3>필압 패턴</h3>
                             <p>개인별 고유한 가압 방식을 분석합니다.</p>
@@ -259,7 +270,7 @@
                     </li>
 
                     <li>
-                        <img src="./assets/images/속도 아이콘.png" alt="선속도">
+                        <img src="./assets/images/ai_content02.png" alt="선속도">
                         <div>
                             <h3>선 속도</h3>
                             <p>선의 속도에 따른 오차를 계산합니다.</p>
@@ -267,7 +278,7 @@
                     </li>
 
                     <li>
-                        <img src="./assets/images/손떨림 아이콘.png" alt="손떨림">
+                        <img src="./assets/images/ai_content03.png" alt="손떨림">
                         <div>
                             <h3>손 떨림</h3>
                             <p>비의도적인 떨림을 실시간으로 분리합니다.</p>
@@ -275,7 +286,7 @@
                     </li>
 
                     <li>
-                        <img src="./assets/images/습관 아이콘.png" alt="습관">
+                        <img src="./assets/images/ai_content04.png" alt="습관">
                         <div>
                             <h3>드로잉 습관</h3>
                             <p>반복되는 드로잉 패턴을 데이터화합니다.</p>
@@ -287,7 +298,7 @@
             </div>
 
             <div class="ai_image">
-                <img src="./assets/images/드로잉습관 학습.png" alt="드로잉습관 학습">
+                <img src="./assets/images/ai_content_img.png" alt="드로잉습관 학습">
             </div>
 
         </div>
@@ -306,7 +317,7 @@
         <div class="ai_description_list">
 
             <div class="ai_description_card">
-                <img src="./assets/images/사용자입력.png" alt="사용자 입력">
+                <img src="./assets/images/ai_description01.png" alt="사용자 입력">
 
                 <div class="ai_description_text">
                     <h3>사용자 입력</h3>
@@ -318,7 +329,7 @@
             </div>
 
             <div class="ai_description_card">
-                <img src="./assets/images/ai분석.png" alt="AI 분석">
+                <img src="./assets/images/ai_description02.png" alt="AI 분석">
 
                 <div class="ai_description_text">
                     <h3>AI 분석</h3>
@@ -330,7 +341,7 @@
             </div>
 
             <div class="ai_description_card">
-                <img src="./assets/images/실시간 필압보정.png" alt="실시간 필압보정">
+                <img src="./assets/images/ai_description03.png" alt="실시간 필압보정">
 
                 <div class="ai_description_text">
                     <h3>실시간 필압보정</h3>
@@ -342,7 +353,7 @@
             </div>
 
             <div class="ai_description_card">
-                <img src="./assets/images/완성도 높은 결과물.png" alt="결과물">
+                <img src="./assets/images/ai_description04.png" alt="결과물">
 
                 <div class="ai_description_text">
                     <h3>완성도 높은 결과물</h3>
@@ -487,127 +498,123 @@
 </section>
 
 <!-- specification -->
-<section class="spec">
-    <div class="container">
+<section class="notes">
+    <div class="note_container">
 
         <!-- 구성품 -->
         <div class="package">
 
-         <h2 class="spec_title">구성품</h2>
+            <h2 class="package_title">구성품</h2>
 
-         <div class="package_grid">
+            <div class="package_grid">
 
-             <div>액정 타블렛 × 1</div>
-             <div></div>
-             <div>클리닝 천 × 1</div>
-             <div></div>
+                <div>액정 타블렛 × 1</div>
+                <div>클리닝 천 × 1</div>
 
-             <div>스타일러스 × 1</div>
-             <div></div>
-             <div>접이식 스탠드 × 1</div>
-             <div></div>
+                <div>스타일러스 × 1</div>
+                <div>접이식 스탠드 × 1</div>
 
-             <div>펜심 추출기 × 1</div>
-             <div></div>
-             <div>다기능 USB-C to USB-C 케이블 × 1</div>
-             <div></div>
+                <div>펜심 추출기 × 1</div>
+                <div>다기능 USB-C to USB-C 케이블 × 1</div>
 
-             <div>펜심 × 10</div>
-             <div></div>
-             <div>3 in 1 케이블 × 1</div>
-             <div></div>
+                <div>펜심 × 10</div>
+                <div>3 in 1 케이블 × 1</div>
 
-             <div>드로잉 장갑 × 1</div>
-              <div></div>
-             <div></div>
-             <div></div>
+                <div>드로잉 장갑 × 1</div>
+
+            </div>
+
+        </div>
+
+        <!-- 사양 -->
+        <section class="spec">
+
+    <h2 class="spec_title">사양</h2>
+
+    <div class="spec_list">
+
+        <div class="spec_row">
+            <div class="item">컬러</div>
+            <div class="value">블랙</div>
+
+            <div class="item">전원 출력</div>
+            <div class="value">5V = 2A</div>
+        </div>
+
+        <div class="spec_row">
+            <div class="item">사이즈</div>
+            <div class="value">407.9 × 232.8 × 12.8mm</div>
+
+            <div class="item">포트</div>
+            <div class="value">
+                다기능 USB-C × 1<br>
+                3-in-1 USB-C × 1
+            </div>
+        </div>
+
+        <div class="spec_row">
+            <div class="item">작업 영역</div>
+            <div class="value">342 × 193mm</div>
+
+            <div class="item">펜 해상도</div>
+            <div class="value">5080 LPI</div>
+        </div>
+
+        <div class="spec_row">
+            <div class="item">순중량</div>
+            <div class="value">1355g</div>
+
+            <div class="item">정확도</div>
+            <div class="value">±0.2mm (센터)</div>
+        </div>
+
+        <div class="spec_row">
+            <div class="item">화면 해상도</div>
+            <div class="value">2560 × 1440</div>
+
+            <div class="item">판독 높이</div>
+            <div class="value">10mm (센터)</div>
+        </div>
+
+        <div class="spec_row">
+            <div class="item">색역 커버율</div>
+            <div class="value">
+                99% sRGB<br>
+                98% Adobe RGB<br>
+                97% Display P3
+            </div>
+
+            <div class="item">초기 기동력</div>
+            <div class="value">2g</div>
+        </div>
+
+        <div class="spec_row">
+            <div class="item">표시 색상</div>
+            <div class="value">1,670만</div>
+
+            <div class="item">틸트</div>
+            <div class="value">60°</div>
+        </div>
+
+        <div class="spec_row">
+            <div class="item">풀 라미네이션</div>
+            <div class="value">지원</div>
+
+            <div class="item">압력 레벨</div>
+            <div class="value">16384</div>
+        </div>
+
+        <div class="spec_row">
+            <div class="item">시야각</div>
+            <div class="value">178°</div>
+
+            <div class="item"></div>
+            <div class="value"></div>
+        </div>
 
     </div>
 
-</div>
-
-        <!-- 사양 -->
-        <table class="spec_table">
-            <thead>
-                <tr>
-                    <th colspan="4">사양</th>
-                </tr>
-            </thead>
-            <tbody>
-
-                <tr>
-                    <td>컬러</td>
-                    <td>블랙</td>
-                    <td>전원 출력</td>
-                    <td>5V = 2A</td>
-                </tr>
-
-                <tr>
-                    <td>사이즈</td>
-                    <td>407.9 × 232.8 × 12.8 mm</td>
-                    <td>포트</td>
-                    <td>
-                        USB-C ×1<br>
-                        3-in-1 USB-C ×1
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>작업 영역</td>
-                    <td>342 × 193 mm</td>
-                    <td>펜 해상도</td>
-                    <td>5080 LPI</td>
-                </tr>
-
-                <tr>
-                    <td>순중량</td>
-                    <td>1355g</td>
-                    <td>정확도</td>
-                    <td>±0.2 mm</td>
-                </tr>
-
-                <tr>
-                    <td>최대 해상도</td>
-                    <td>2560 × 1440</td>
-                    <td>펜촉 높이</td>
-                    <td>10 mm</td>
-                </tr>
-
-                <tr>
-                    <td>색역 커버율(표준)</td>
-                    <td>
-                        99% sRGB<br>
-                        98% Adobe RGB<br>
-                        97% Display P3
-                    </td>
-                    <td>초기 기동력</td>
-                    <td>2 g</td>
-                </tr>
-
-                <tr>
-                    <td>표시 색상</td>
-                    <td>1,670만</td>
-                    <td>틸트</td>
-                    <td>60°</td>
-                </tr>
-
-                <tr>
-                    <td>풀 라미네이션</td>
-                    <td>맞음</td>
-                    <td>압력 레벨</td>
-                    <td>16384</td>
-                </tr>
-
-                <tr>
-                    <td>시야각</td>
-                    <td>178°</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-
-            </tbody>
-
-        </table>
+</section>
 
     </div>
 </section>
@@ -733,7 +740,8 @@
         <div class="footer_info">
             <address class="address">
             사업자등록번호 123-12-12345<br>
-            서울특별시 금천구 가산디지털2로 34, 2층
+            서울특별시 금천구 가산디지털2로 34, 2층<br>
+            211-4호(가산동, 지밸리더리브스마트타워) 
             </address>
 
             <p>
@@ -757,7 +765,7 @@
 </footer>
 
 
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
 <script src="./assets/js/jquery-1.12.3.js"></script>
 <script src="./assets/js/script.js"></script>
 </body>

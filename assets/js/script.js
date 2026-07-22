@@ -1,8 +1,13 @@
 //protect
 // 슬라이드
-
-//ai_description
-//카드 슬라이드
+const currentPage = document.querySelector(".protect_page .current");
+const protectSwiper = new Swiper(".protectSwiper",{
+    slidesPerView: 1, spaceBetween: 0, speed: 800, loop: true, autoplay: { delay: 3000, disableOnInteraction: false, }, on: {
+        slideChange: function () {
+            currentPage.textContent = this.realIndex + 1;
+        }
+    }
+});
 
 // faq
 const faqItems = document.querySelectorAll(".faq_item");

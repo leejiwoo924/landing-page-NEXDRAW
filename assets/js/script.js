@@ -9,6 +9,23 @@ const protectSwiper = new Swiper(".protectSwiper",{
     }
 });
 
+// AI content slide-in
+const aiContent = document.querySelector(".ai_content");
+if (aiContent) {
+    const aiObserver = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("is-visible");
+                    aiObserver.unobserve(entry.target);
+                }
+            });
+        },
+        { threshold: 0.25 }
+    );
+    aiObserver.observe(aiContent);
+}
+
 // faq
 const faqItems = document.querySelectorAll(".faq_item");
 
